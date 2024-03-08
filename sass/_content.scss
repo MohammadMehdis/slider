@@ -1,0 +1,61 @@
+body {
+  main {
+    .hero {
+      header {
+        .header_content {
+          background-image: url(../images/Slider.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 336px;
+          .header_content__container {
+            width: 100%;
+            gap: 40px;
+            h1 {
+              padding: 0px 34px;
+              width: 100%;
+              font-size: 40px;
+              font-family: Vazir-Bold;
+              color: #e5f2e9;
+              a {
+                color: #fff;
+              }
+            }
+            button {
+              width: 184px;
+              height: 40px;
+              font-family: Vazir-Medium-FD-WOL;
+              font-size: 16px;
+              border-radius: 8px;
+              background-color: #417f56;
+              color: #ffffff;
+              border: none;
+              transition: all 1s 0s;
+            }
+            button:hover {
+              background-color: rgba(170, 21, 21, 0.588);
+            }
+            ul {
+              border-top-left-radius: 25px;
+              border-top-right-radius: 25px;
+              height: 33px;
+              width: 154px;
+              background-color: #ffffff;
+              gap: 4px;
+              li {
+                width: 8px;
+                height: 8px;
+                list-style: circle !important;
+                border-radius: 100%;
+                background-color: #adadad;
+              }
+              .header_content__container___ul____active {
+                background-color: #417f56;
+                transform: scale(1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

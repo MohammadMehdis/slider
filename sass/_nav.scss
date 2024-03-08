@@ -1,0 +1,50 @@
+body {
+  main {
+    .hero {
+      header {
+        nav {
+          width: 100%;
+          .nav_Logo {
+            img {
+              width: 155px;
+              height: 51px;
+            }
+          }
+          .nav_menu {
+            gap: 24px;
+            width: 808px;
+            height: 31px;
+            li {
+              a {
+                color: #717172;
+                font-family: Vazir-Medium-FD-WOL;
+                font-weight: 100;
+                font-size: 20px;
+              }
+              .nav_menu__active {
+                color: #417f56 !important;
+                border-bottom: 2px solid #417f56;
+                font-family: Vazir-Bold !important;
+              }
+            }
+          }
+          .nav_icon {
+            width: 154px;
+            height: 40px;
+            gap: 8px;
+            li {
+              background-color: #e5f2e9;
+              border-radius: 4px;
+              width: 40px;
+              height: 40px;
+              a {
+                width: 24px;
+                height: 24px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

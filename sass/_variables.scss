@@ -1,0 +1,75 @@
+@mixin flex(
+  $display,
+  $justify-content,
+  $align-items,
+  $flex-direction,
+  $flex-wrap
+) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+  flex-wrap: $flex-wrap;
+}
+
+body {
+  main {
+    .hero {
+      header {
+        nav {
+          @include flex(flex, space-between, center, row, wrap);
+          .nav_Logo {
+            @include flex(flex, center, center, row, wrap);
+          }
+          .nav_menu {
+            @include flex(flex, center, center, row, wrap);
+            li {
+              a {
+                @include flex(flex, center, center, row, wrap);
+              }
+            }
+          }
+          .nav_icon {
+            @include flex(flex, flex-end, center, row, wrap);
+            li {
+              @include flex(flex, center, center, row, wrap);
+            }
+          }
+        }
+        .header_content {
+          @include flex(flex, center, flex-end, row, wrap);
+          .header_content__container {
+            @include flex(flex, center, center, column, wrap);
+            h1 {
+              @include flex(flex, space-between, center, row, wrap);
+            }
+            ul {
+              @include flex(flex, center, center, row, wrap);
+              li {
+                @include flex(flex, center, center, row, wrap);
+              }
+            }
+          }
+        }
+      }
+      .row {
+        @include flex(flex, center, center, column, nowrap);
+        .row_container__img {
+          @include flex(flex, center, center, row, nowrap);
+          div {
+            @include flex(flex, center, flex-end, row, nowrap);
+          }
+        }
+      }
+      .about {
+        @include flex(flex, space-between, flex-start, row, wrap);
+      }
+      .btn {
+        @include flex(flex, flex-end, center, row, nowrap);
+      }
+      .about_icon__container {
+        @include flex(flex, center, center, row, wrap);
+      }
+    }
+  }
+}
